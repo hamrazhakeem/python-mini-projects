@@ -1,16 +1,18 @@
 import random
 
-def welcome_message():
-    print("Roll the dice? (y/n)")
-    choice = input()
-    return choice
-
+rolled_dice = 0
 def roll_dice():
-    choice = welcome_message()
-    if choice == choice.lower() == "y":
-        print((random.randint(1, 6), random.randint(1, 6)))
-        roll_dice()
-    elif choice == choice.lower() == "n":
+    global rolled_dice
+    choice = input("Roll the dice? (y/n): ").lower()
+    if choice == "y":
+        no_of_dice = int(input("Enter the number of dice to roll: "))
+        for i in range(no_of_dice):
+            print(random.randint(1, 6), end=" ")
+        rolled_dice += 1
+        print()
+        roll_dice() 
+    elif choice == "n":
+        print(f"You rolled the dice {rolled_dice} times.")
         print("Goodbye!")
     else:
         print("Enter the correct choice!")
