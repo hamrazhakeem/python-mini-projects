@@ -37,8 +37,8 @@ def start_game():
 
         determine_winner(user_choice, computer_choice)
 
-        continue_choice = input('Do you want to continue? (y/n): ').lower()
-        if continue_choice == 'n':
+        should_continue = input('Do you want to continue? (y/n): ').lower()
+        if should_continue == 'n':
             break
 
 start_game()
