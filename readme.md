@@ -92,8 +92,3 @@ python-mini-projects/
 Feel free to fork this repository, add new mini projects, or improve the existing ones. Contributions are always welcome!
 
 ---
-
-## License
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
